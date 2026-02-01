@@ -9,24 +9,15 @@ function Video() {
         </div>
         
         <div className="video-wrapper">
-          <div className="video-container">
-            <a 
-              href="https://www.youtube.com/watch?v=lB06s5L6vYo" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              style={{ display: 'block', width: '100%', height: '100%', position: 'relative' }}
-            >
-              <img 
-                src="https://img.youtube.com/vi/lB06s5L6vYo/maxresdefault.jpg" 
-                alt="Presentation Video" 
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-              />
-              <div className="play-overlay">
-                <button className="play-btn" type="button">
-                  <i className="fas fa-play"></i>
-                </button>
-              </div>
-            </a>
+          <div className="video-container" style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', boxShadow: '0 10px 40px rgba(0,0,0,0.3)' }}>
+            <iframe
+              src="https://www.youtube.com/embed/lB06s5L6vYo"
+              title="Presentation Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+            ></iframe>
           </div>
           <div className="video-cta">
             <a 
