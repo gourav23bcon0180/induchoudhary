@@ -30,10 +30,20 @@ function Video() {
           </div>
           <div className="video-cta">
             <a 
-              href="https://www.fanbasis.com/agency-checkout/digitalwealthacademy/PNqY4?affiliate=indu9489" 
+              href="#join" 
               className="cta-button-primary"
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={(e) => {
+                e.preventDefault()
+                const element = document.getElementById('join')
+                if (element) {
+                  const headerHeight = document.getElementById('header')?.offsetHeight || 0
+                  const targetPosition = element.offsetTop - headerHeight
+                  window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                  })
+                }
+              }}
             >
               <span>Start Your Journey Today</span>
               <i className="fas fa-arrow-right"></i>

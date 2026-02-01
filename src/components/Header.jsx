@@ -110,10 +110,20 @@ function Header() {
             </li>
             <li>
               <a 
-                href="https://www.fanbasis.com/agency-checkout/digitalwealthacademy/PNqY4?affiliate=indu9489" 
+                href="#join" 
                 className="cta-button nav-cta"
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={(e) => {
+                  e.preventDefault()
+                  const element = document.getElementById('join')
+                  if (element) {
+                    const headerHeight = document.getElementById('header')?.offsetHeight || 0
+                    const targetPosition = element.offsetTop - headerHeight
+                    window.scrollTo({
+                      top: targetPosition,
+                      behavior: 'smooth'
+                    })
+                  }
+                }}
               >
                 Join Now
               </a>

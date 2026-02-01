@@ -32,10 +32,9 @@ function Hero() {
         </p>
         <div className="hero-cta-group">
           <a 
-            href="https://www.fanbasis.com/agency-checkout/digitalwealthacademy/PNqY4?affiliate=indu9489" 
+            href="#join" 
             className="cta-button-primary"
-            target="_blank"
-            rel="noopener noreferrer"
+            onClick={(e) => handleNavClick(e, 'join')}
           >
             <span>Start Your Journey</span>
             <i className="fas fa-arrow-right"></i>
