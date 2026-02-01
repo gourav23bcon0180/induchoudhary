@@ -84,7 +84,6 @@ function Pricing() {
               >
                 {plan.cta}
               </a>
-              </a>
             </div>
           ))}
         </div>
