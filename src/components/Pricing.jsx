@@ -12,6 +12,7 @@ function Pricing() {
         'Lifetime updates & new modules'
       ],
       cta: 'BEGIN YOUR TRANSFORMATION →',
+      link: 'https://www.fanbasis.com/agency-checkout/digitalwealthacademy/rkq5k?affiliate=indu9489',
       featured: false
     },
     {
@@ -25,6 +26,7 @@ function Pricing() {
         'Additional done-for-you products'
       ],
       cta: "I'M ALL IN! →",
+      link: 'https://www.fanbasis.com/agency-checkout/digitalwealthacademy/PNqY4?affiliate=indu9489',
       featured: true
     },
     {
@@ -38,6 +40,7 @@ function Pricing() {
         'Resell DWA AFTER payment plan is completed'
       ],
       cta: 'YES PLEASE! →',
+      link: 'https://www.fanbasis.com/agency-checkout/digitalwealthacademy/mZOoG?affiliate=indu9489',
       featured: false
     }
   ]
@@ -74,12 +77,13 @@ function Pricing() {
                 ))}
               </ul>
               <a 
-                href="https://www.fanbasis.com/agency-checkout/digitalwealthacademy/PNqY4?affiliate=indu9489" 
+                href={plan.link} 
                 className={`plan-cta ${plan.featured ? 'featured-cta' : ''}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {plan.cta}
+              </a>
               </a>
             </div>
           ))}
